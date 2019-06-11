@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue Component Template</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="vueComponent.js"></script>
+</head>
+
+<body>
+  <div id="VueEL">
+    <h1>Vue Component Template</h1>
+    <h4>Direct use of Component</h4>
+    <my-component text="Write your Poem here"></my-component>
+
+    <br><br><br><br><br>
+
+    <h4>Use of v-for with Component</h4>
+    <my-component v-for="t in texts" :key="t.id" :text="t.text"><my-component>
+  </div>
+
+  <template id="my-component-template">
+    <p>{{text}}</p>
+  </template>
+
+</body>
+</html>

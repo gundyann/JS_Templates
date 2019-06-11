@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue Standard Template</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="vueStandard.js"></script>
+</head>
+
+<body>
+  <div id="VueEL">
+    <h1>Vue Standard Template</h1>
+    <h4>Vue Data and Vue Methods example:</h4>
+    <input type="text" v-model="inputValue" placeholder="Write new Input here">
+    <button type="button" @click="addInput">Add Input</button>
+
+    <ul>
+      <li v-for="input in inputs">{{input}}</li>
+    </ul>
+
+    <br><br><br><br>
+    <h4>Vue Watched Propertys example:</h4>
+    <input type="text" v-model="inputValue02">
+    <ul>
+      <li v-for="logText in log">{{logText}}</li>
+    </ul>
+
+    <br><br><br><br>
+    <h4>Vue Computed Propertys example:</h4>
+    <input type="text" v-model="message" placeholder="Write Texte here">
+    <p>Reversed Message: {{reversedMessage}}</p>
+
+  </div>
+</body>
+
+</html>
