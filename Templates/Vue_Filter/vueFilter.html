@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue Filter Template</title>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="vueFilter.js"></script>
+</head>
+
+<body>
+  <div id="VueEL">
+    <h1>Vue Filter Template</h1>
+    <input type="text" v-model="text" placeholder="Write your Text here">
+    <p>{{text | addBraces | enlarge}}</p>
+
+  </div>
+</body>
+
+</html>
